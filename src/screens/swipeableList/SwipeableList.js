@@ -122,13 +122,13 @@ function ListItem({item, onRemove}) {
     },
   });
 
-  function handleRightbuttonClick() {
+  const handleRightbuttonClick = () => {
     isRemoving.value = true;
-  }
+  };
 
-  function handleLeftbuttonClick() {
+  const handleLeftbuttonClick = () => {
     isEditing.value = true;
-  }
+  };
 
   const styles = useAnimatedStyle(() => {
     if (isRemoving.value || isEditing.value) {
